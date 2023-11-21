@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Montserrat:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    background-image: linear-gradient(rgb(10, 10, 10), rgb(68, 23, 23)), url(../img/tile.png);
+    background-repeat: repeat;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    letter-spacing: -0.3rem;
+    font-size: 150px;
+    font-weight: 400;
+    margin: 0;
+    animation: 1s anim2 backwards ease;
+    animation-delay: 1.7s;
+    transform: translateY(-20px);
+}
+
+h1 span {
+    --gradient-color-1: rgb(151, 29, 29);
+    --gradient-color-2: rgb(255, 117, 117);
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: linear-gradient();
+    text-shadow: 0px 0px 15px rgba(255, 41, 41, 0.35);
+    background-image: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-1), var(--gradient-color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    overflow: hidden;
+    width: 275.5px;
+    animation: 1s anim backwards cubic-bezier(0.25, 0.1, 0.17, 1), 5s anim4 ease-in-out infinite alternate;
+    animation-delay: .7s;
+}
+
+p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    overflow: hidden;
+    margin: 0;
+    transform: translateY(-15px);
+    text-align: center;
+}
+
+.overflow-hidden-div {
+    overflow-y: hidden;
+    animation: 1s anim3 backwards;
+    animation-delay: 1.7s;
+    height: 230px;
+}
+
+@keyframes anim {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 275.5px;
+    }
+}
+
+@keyframes anim2 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes anim3 {
+    from {
+        height: 170px;
+    }
+
+    to {
+        height: 230px;
+    }
+}
+
+@keyframes anim4 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
