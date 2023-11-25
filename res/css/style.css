@@ -208,6 +208,16 @@ footer a:hover {
     color: #fff;
 }
 
+@media only screen and (max-width:504px) {
+    .dev-icon {
+        width: 150px;
+    }
+
+    .dev-wrapper {
+        font-size: 1.5rem;
+    }
+}
+
 @media only screen and (max-width:954px) {
     .dev-wrapper {
         margin-left: auto;
